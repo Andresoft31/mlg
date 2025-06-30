@@ -1,0 +1,12 @@
+{
+    "jugadores": ["Guerrero", "Mago", "Arquero"],
+    "acciones": ["atacar", "defender", "usar habilidad", "huir"],
+    "resultados": ["crítico", "éxito", "fallo", "esquivado"],
+    "probabilidades": {
+      "crítico": 0.1,
+      "éxito": 0.5,
+      "fallo": 0.3,
+      "esquivado": 0.1
+    }
+  }
+  

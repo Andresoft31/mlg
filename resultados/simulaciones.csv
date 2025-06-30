@@ -1,0 +1,4 @@
+id,jugador,accion,resultado
+0,"('Mago',)","('huir',)",fallo
+1,"('Mago',)","('atacar',)",éxito
+2,"('Guerrero',)","('atacar',)",fallo
