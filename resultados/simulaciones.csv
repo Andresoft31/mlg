@@ -1,0 +1,10 @@
+id,player_id,accion_elegida,estado_resultante,evento_aplicado
+0,defensive,shoot,"{'jugador': {'vida': 100, 'balas': 30}, 'enemigo': {'vida': 80}}","{'afecta': 'enemigo', 'modifica': 'vida', 'valor': -20}"
+1,defensive,move,"{'jugador': {'vida': 100, 'balas': 30}, 'enemigo': {'vida': 100}}",
+2,defensive,heal,"{'jugador': {'vida': 115, 'balas': 30}, 'enemigo': {'vida': 100}}","{'afecta': 'jugador', 'modifica': 'vida', 'valor': 15}"
+3,defensive,heal,"{'jugador': {'vida': 115, 'balas': 30}, 'enemigo': {'vida': 100}}","{'afecta': 'jugador', 'modifica': 'vida', 'valor': 15}"
+4,aggressive,shoot,"{'jugador': {'vida': 100, 'balas': 30}, 'enemigo': {'vida': 80}}","{'afecta': 'enemigo', 'modifica': 'vida', 'valor': -20}"
+5,defensive,move,"{'jugador': {'vida': 100, 'balas': 30}, 'enemigo': {'vida': 100}}",
+6,defensive,shoot,"{'jugador': {'vida': 100, 'balas': 30}, 'enemigo': {'vida': 80}}","{'afecta': 'enemigo', 'modifica': 'vida', 'valor': -20}"
+7,aggressive,move,"{'jugador': {'vida': 100, 'balas': 30}, 'enemigo': {'vida': 100}}",
+  	3101632739

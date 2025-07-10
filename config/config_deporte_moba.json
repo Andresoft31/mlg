@@ -1,0 +1,64 @@
+{
+  "juego": "moba_estrategia",
+  "player_profiles": [
+    {
+      "id": "soporte",
+      "probabilidades": {
+        "curar": 0.6,
+        "buff": 0.3,
+        "defender": 0.1
+      }
+    },
+    {
+      "id": "carry",
+      "probabilidades": {
+        "atacar": 0.7,
+        "farmear": 0.2,
+        "gankear": 0.1
+      }
+    }
+  ],
+  "estado_inicial": {
+    "jugador": {
+      "vida": 100,
+      "energia": 100,
+      "oro": 500
+    },
+    "enemigo": {
+      "vida": 100
+    }
+  },
+  "event_definitions": {
+    "curar": {
+      "afecta": "jugador",
+      "modifica": "vida",
+      "valor": 20
+    },
+    "buff": {
+      "afecta": "jugador",
+      "modifica": "energia",
+      "valor": 15
+    },
+    "defender": {
+      "afecta": "jugador",
+      "modifica": "vida",
+      "valor": 10
+    },
+    "atacar": {
+      "afecta": "enemigo",
+      "modifica": "vida",
+      "valor": -25
+    },
+    "farmear": {
+      "afecta": "jugador",
+      "modifica": "oro",
+      "valor": 50
+    },
+    "gankear": {
+      "afecta": "enemigo",
+      "modifica": "vida",
+      "valor": -30
+    }
+  },
+  "duracion_partida": 200
+}

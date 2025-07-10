@@ -1,0 +1,59 @@
+{
+  "juego": "rpg_aventura",
+  "player_profiles": [
+    {
+      "id": "mago",
+      "probabilidades": {
+        "cast_spell": 0.6,
+        "heal": 0.3,
+        "defend": 0.1
+      }
+    },
+    {
+      "id": "guerrero",
+      "probabilidades": {
+        "attack": 0.7,
+        "defend": 0.2,
+        "use_item": 0.1
+      }
+    }
+  ],
+  "estado_inicial": {
+    "jugador": {
+      "vida": 100,
+      "mana": 50,
+      "experiencia": 0
+    },
+    "enemigo": {
+      "vida": 100
+    }
+  },
+  "event_definitions": {
+    "cast_spell": {
+      "afecta": "enemigo",
+      "modifica": "vida",
+      "valor": -25
+    },
+    "heal": {
+      "afecta": "jugador",
+      "modifica": "vida",
+      "valor": 20
+    },
+    "attack": {
+      "afecta": "enemigo",
+      "modifica": "vida",
+      "valor": -15
+    },
+    "defend": {
+      "afecta": "jugador",
+      "modifica": "vida",
+      "valor": 5
+    },
+    "use_item": {
+      "afecta": "jugador",
+      "modifica": "mana",
+      "valor": 10
+    }
+  },
+  "duracion_partida": 300
+}

@@ -1,0 +1,25 @@
+{
+  "juego": "shooter_pvp",
+  "player_profiles": [
+    { "id": "aggressive", "probabilidades": { "shoot": 0.7, "move": 0.2, "reload": 0.1 } },
+    { "id": "defensive", "probabilidades": { "move": 0.4, "heal": 0.3, "shoot": 0.3 } }
+  ],
+  "estado_inicial": {
+    "jugador": { "vida": 100, "balas": 30, "posicion": 0 },
+    "enemigo": { "vida": 100 }
+  },
+  "event_definitions": {
+    "shoot": { "afecta": "enemigo", "modifica": "vida", "valor": -20 },
+    "reload": { "afecta": "jugador", "modifica": "balas", "valor": 30 },
+    "heal": { "afecta": "jugador", "modifica": "vida", "valor": 15 },
+    "move": { "afecta": "jugador", "modifica": "posicion", "valor": 1 }
+  },
+  "duracion_partida": 180,
+  "formato_salida": {
+    "player_id": "string",
+    "profile": "string",
+    "score": "int",
+    "resultado": "string",
+    "acciones": "list"
+  }
+}

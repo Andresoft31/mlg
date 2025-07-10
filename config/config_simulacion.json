@@ -1,0 +1,61 @@
+{
+  "juego": "sim_ciudad",
+  "player_profiles": [
+    {
+      "id": "economista",
+      "probabilidades": {
+        "subsidio": 0.5,
+        "inversion": 0.3,
+        "reducir_gasto": 0.2
+      }
+    },
+    {
+      "id": "ambientalista",
+      "probabilidades": {
+        "plantar_arbol": 0.6,
+        "reciclaje": 0.3,
+        "educar": 0.1
+      }
+    }
+  ],
+  "estado_inicial": {
+    "ciudad": {
+      "poblacion": 1000,
+      "dinero": 50000,
+      "satisfaccion": 75
+    }
+  },
+  "event_definitions": {
+    "subsidio": {
+      "afecta": "ciudad",
+      "modifica": "dinero",
+      "valor": -5000
+    },
+    "inversion": {
+      "afecta": "ciudad",
+      "modifica": "dinero",
+      "valor": -10000
+    },
+    "reducir_gasto": {
+      "afecta": "ciudad",
+      "modifica": "dinero",
+      "valor": 3000
+    },
+    "plantar_arbol": {
+      "afecta": "ciudad",
+      "modifica": "satisfaccion",
+      "valor": 5
+    },
+    "reciclaje": {
+      "afecta": "ciudad",
+      "modifica": "satisfaccion",
+      "valor": 3
+    },
+    "educar": {
+      "afecta": "ciudad",
+      "modifica": "poblacion",
+      "valor": 20
+    }
+  },
+  "duracion_partida": 600
+}
