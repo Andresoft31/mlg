@@ -1,0 +1,19 @@
+# Archivos y carpetas de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de sistema (macOS)
+.DS_Store
+
+# Archivos de salida / datos generados
+*.csv
+*.xlsx
+*.log
+*.tmp
+
+# Entornos virtuales (si los usás)
+.venv/
+venv/
+.env/
+*.env
